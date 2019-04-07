@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+<form data-form="form" class="tasksForm">
+  <label for="textField">TOP Tasks</label>
+  <input data-input="inputField" class="textField" id="textField" type="text" autocomplete="off">
+  <div data-task="pinnedTasks">
+    <p id="pinnedTitle">Pinned:</p>
+    <div data-tasksData="Task Name 1" class="task">
+      <label class="taskLabel">
+        <span class="taskName">Task Name 1</span>
+        <input id="1" class="taskCheckbox" type="checkbox" checked>
+      </label>
+    </div>
+  </div> <!-- pinnedTasks -->
+
+  <div data-task="allTasks">
+    <p id="allTitle">All Tasks:</p>
+    <div data-tasksData="Task Name 2" class="task">
+      <label class="taskLabel">
+        <span class="taskName">Task Name 2</span>
+        <input id="2" class="taskCheckbox" type="checkbox">
+      </label>
+    </div>
+
+
+    <div data-tasksData="Task Name 3" class="task">
+      <label class="taskLabel">
+        <span class="taskName">Name 3</span>
+        <input id="3" class="taskCheckbox" type="checkbox">
+      </label>
+    </div>
+    <div data-tasksData="Task Name 4" class="task">
+        <label class="taskLabel">
+          <span class="taskName">Task 4</span>
+          <input id="4" class="taskCheckbox" type="checkbox">
+        </label>
+      </div>
+      <div data-tasksData="Task Name 5" class="task">
+          <label class="taskLabel">
+            <span class="taskName">5</span>
+            <input id="5" class="taskCheckbox" type="checkbox">
+          </label>
+        </div>
+  </div>
+</form>
+
+<div>
+  <form class="error" id="error">
+    <p>Необходимо ввести значение!</p>
+  </form>
+</div>
+
+</body>
+</html>

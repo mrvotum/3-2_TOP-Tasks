@@ -1,0 +1,62 @@
+.tasksForm{
+  width: 250px;
+  border: 1px solid black;
+  margin: 70px auto;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.textField{
+  height: 20px;
+  margin-top: 10px;
+}
+
+.hide{
+  display: none;
+}
+.show{
+  display: block;
+}
+
+.task{
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 10px;
+  margin-top: 5px;
+  box-sizing: border-box;
+}
+.taskLabel{
+  display: flex;
+  justify-content: space-between;
+}
+
+.noPinnedTasks{
+  color: red;
+  font-weight: 700;
+  text-align: center;
+}
+
+.error{
+  width: 300px;
+  height: 200px;
+  position: fixed;
+  background-color: #fff;
+  border: 2px solid black;
+  color: red;
+  font-weight: 700;
+  text-align: center;
+  left: calc(50% - 150px);
+  top: calc(50% - 100px);
+  display: none;
+}
+.error::after{
+  content: '';
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, .5);
+}
