@@ -42,10 +42,10 @@ form.addEventListener('click', (event) => {
     }
 
     if(document.querySelector('[data-task=allTasks]').childElementCount === 1){
-      const pinnedTitle = document.getElementById('allTitle');
-      pinnedTitle.textContent = 'All Tasks: No tasks found';
+      const allTitle = document.getElementById('allTitle');
+      allTitle.textContent = 'All Tasks: No tasks found';
     } else {
-      pinnedTitle.textContent = 'All Tasks:';
+      allTitle.textContent = 'All Tasks:';
     }
   }
 });
@@ -68,10 +68,9 @@ inputField.addEventListener('keypress', function(e) {
       </label>`;
       allTasks.appendChild(divEl);
       inputField.value = '';
+      allTitle.textContent = 'All Tasks:';
     }
 
-    const lol = '[data-tasksData]';
-    console.log(lol);
     for (let i = 0; i < allTasks.childElementCount; i++){
       allTasks.children[i].style.display = 'block';
     }
