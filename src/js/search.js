@@ -61,6 +61,8 @@ form.onkeypress = function (event) {
 };
 
 function hideArr(){
-  allTasks.children[hideEl].style.display = 'none';
-  hiddenCount++;
+  if (allTasks.children[hideEl].style.display != 'none') {
+    allTasks.children[hideEl].style.display = 'none';
+    hiddenCount++;
+  }
 }
